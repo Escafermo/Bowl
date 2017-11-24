@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
     
-    public List<int> bowls = new List<int>();
+    public List<int> rolls = new List<int>();
 
     private PinSetter pinSetter;
     private Ball ball;
+    private ScoreDisplay scoreDisplay;
 
     private void Start()
     {
-        
+        scoreDisplay = GameObject.FindObjectOfType<ScoreDisplay>();
 
         pinSetter = GameObject.FindObjectOfType<PinSetter>();
 
@@ -19,15 +20,19 @@ public class GameManager : MonoBehaviour {
     }
 
     public void Bowl (int pinFall)
-    {
-        bowls.Add(pinFall);
+    {   
+            rolls.Add(pinFall);
 
-        ActionMaster.Action nextAction = ActionMaster.NextAction(bowls);
+            ball.Reset();
 
-        pinSetter.PerformAction(nextAction);
-        ball.Reset();
-        
+            pinSetter.PerformAction(ActionMaster.NextAction(rolls));
+        try
+        {
+            scoreDisplay.FillRolls(rolls);
+            scoreDisplay.FillFrames(ScoreMaster.ScoreCumulative(rolls));
+        } catch
+        {
+            Debug.LogWarning("Error here - todo Joao");
+        }
     }
-    
-    
 }

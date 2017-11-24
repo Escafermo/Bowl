@@ -50,7 +50,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T04BowlStrikeInLastFrame()
     //{
     //    int[] thisRolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10 };
-        
+
     //    Assert.AreEqual(reset, ActionMaster.NextAction(thisRolls.ToList()));
     //}
 
@@ -58,7 +58,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T05BowlSpareInLastFrame()
     //{
     //    int[] thisRolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9 };
-        
+
     //    Assert.AreEqual(reset, ActionMaster.NextAction(thisRolls.ToList()));
     //}
 
@@ -66,7 +66,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T06RollsEndGame()
     //{
     //    int[] thisRolls = { 8, 2, 7, 3, 3, 4, 10, 2, 8, 10, 10, 8, 0, 10, 8, 2, 9 };
-        
+
     //    Assert.AreEqual(endGame, ActionMaster.NextAction(thisRolls.ToList()));
     //}
 
@@ -74,7 +74,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T07GameEndsAtBowl20()
     //{
     //    int[] thisRolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
-        
+
 
     //    Assert.AreEqual(endGame, ActionMaster.NextAction(thisRolls.ToList()));
     //}
@@ -84,7 +84,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T08Bowl5AfterStrikeOn20()
     //{
     //    int[] thisRolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10, 5 };
-      
+
     //    Assert.AreEqual(tidy, ActionMaster.NextAction(thisRolls.ToList()));
 
     //}
@@ -93,7 +93,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T08BowlZeroAfterStrikeOn20()
     //{
     //    int[] thisRolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10, 0 };
-       
+
 
     //    Assert.AreEqual(tidy, ActionMaster.NextAction(thisRolls.ToList()));
 
@@ -103,7 +103,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T09BowlZeroInFirstBowl()
     //{
     //    int[] thisRolls = { 0, 10, 5, 1 };
-       
+
 
     //    Assert.AreEqual(endTurn, ActionMaster.NextAction(thisRolls.ToList()));
 
@@ -113,7 +113,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T10TestTurkey()
     //{
     //    int[] thisRolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10, 10, 10 };
-       
+
     //    Assert.AreEqual(endGame, ActionMaster.NextAction(thisRolls.ToList()));
     //}
 
@@ -121,7 +121,7 @@ public class ActionMasterTest : MonoBehaviour
     //public void T11TestZeroAndOne()
     //{
     //    int[] thisRolls = { 0, 1 };
-        
+
     //    Assert.AreEqual(endTurn, ActionMaster.NextAction(thisRolls.ToList()));
 
     //}

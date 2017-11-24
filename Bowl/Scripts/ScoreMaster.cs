@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreMaster {
-
-    private GameManager gameManager;
+public static class ScoreMaster {
     
     public static List<int> ScoreCumulative (List<int> rolls)
     {
@@ -25,7 +23,6 @@ public class ScoreMaster {
 
 	public static List<int> ScoreFrames (List<int> rolls)
     {
-
         List<int> frames = new List<int>();
 
         //Index i points to second bowl of frame
@@ -50,7 +47,6 @@ public class ScoreMaster {
                 frames.Add(10 + rolls[i + 1]);
             }
         }
-
         return frames;
     }
 }

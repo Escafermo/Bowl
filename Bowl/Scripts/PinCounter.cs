@@ -70,7 +70,7 @@ public class PinCounter : MonoBehaviour {
         lastSettledCount = standing;
 
         gameManager.Bowl(pinFall);
-        
+
         lastStandingCount = -1;
         ballLeftBox = false;
         
